@@ -9,15 +9,43 @@
     tools:context="com.example.sojun.linearlayout03.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ff5656"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#faea73"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#73fa7c"/>
+
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#5468ff"
+        android:layout_gravity="right"
+        android:layout_weight="1">
     </LinearLayout>
 
 </LinearLayout>
